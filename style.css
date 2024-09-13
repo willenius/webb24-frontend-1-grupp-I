@@ -196,3 +196,171 @@ a {
 /* Explore */
 
 /* Profile */
+.p-container {
+    display: flex;
+}
+
+.p-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.p-login {
+    border: 2px solid black;
+    width: 60%;
+    height: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.p-login .p-h1 {
+    text-align: center;
+}
+
+.p-h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.p-input-box {
+    border-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.p-input-box input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.p-login .p-input-box {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+.p-checkbox-lösen {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.p-submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.p-submit input {
+    width: 20%;
+    padding: 2px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.p-reg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p-lösen:hover {
+    color: rgb(115, 107, 107);
+}
+
+.p-registrera:hover {
+    color: rgb(115, 107, 107);
+}
+
+/* input-box-2 */
+.r-input-box-2 {
+    border-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.r-input-box-2 input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.p-login .r-input-box-2 {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+} 
+
+/* footer */
+.footerbottom {
+    margin-left: 300px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    list-style-type: none;
+}
+
+
+
+.footerhover,
+.footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+.footerhover:hover {
+    color: darkgrey;
+    transition: 0.3s;
+}
+
+/* Media Query för att hantera smalare skärmar, t.ex. på 768px */
+@media (max-width: 768px) {
+    .p-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        width: 100vw;
+    }
+    .p-login {
+        width: 100%; 
+        padding: 0;
+    }
+
+    .p-h1 {
+        font-size: 36px;
+    }
+
+    .p-submit input {
+        font-size: 1rem; 
+    }
+
+    .p-input-box input {
+        font-size: 0.9rem; 
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .footerbottom {
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        border-left: none;
+    }
+}  

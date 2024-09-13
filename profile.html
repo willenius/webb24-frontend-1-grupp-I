@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="p-container">
+        <header>
+            <nav class="navbar">
+                <h1>InstaCheese</h1>
+                <ul>
+                    <li class="nav-spacer"><a class="nav-hover" href="index.html"><i class="fa-solid fa-house"></i>
+                            Home</a>
+                    </li>
+                    <li><a class="nav-hover" href="explore.html"><i class="fa-solid fa-magnifying-glass"></i>
+                            Explore</a>
+                    </li>
+                    <li><a class="nav-hover" href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="p-main">
+            <form class="p-login">
+                <h1 class="p-h1">Logga in</h1>
+                <div class="p-input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="p-input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" name="password" placeholder="Lösenord" required>
+                </div>
+                <div class="p-checkbox-lösen">
+                    <label><input type="checkbox" id="checkbox" name="checkbox">Kom ihåg mig</label>
+                    <a class="p-lösen" href="#">Glömt lösenord?</a>
+                </div>
+                <div class="p-submit">
+                    <input type="submit" id="submit" name="submit" value="Logga in">
+                </div>
+                <p class="p-reg">Har inget konto? <a class="p-registrera" href="registrera.html">Registrera</a></p>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="footerbottom">
+            <div class="footer-links">
+                <ul class="footercontainer">
+                    <li>
+                        <a class="footerhover footercontainer" href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footerhover" href="explore.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footerhover" href="explore.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
