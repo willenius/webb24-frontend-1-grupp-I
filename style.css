@@ -319,6 +319,79 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
     font-size: 1.3rem;
+    /* margin-left: 300px; */
+
+}
+
+/* hover färg och transition för lite stil */
+.footerhover:hover {
+    color: rgb(104, 102, 102);
+    transition: 0.3s;
+    /* slut på footer */
+
+}
+
+.main-container {
+    display: flex;
+}
+
+.navbar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* explore, flex och media query för mobilanpassning */
+
+.e-main {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* bl.a wrap för att sätta bilderna i ordning, centrera innehåll med flex och justify/align */
+.e-flex-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Det här är bl.a för border radius och för att kunna selecta och stylea bilderna */
+.tile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 5px 2px 5px gray;
+    object-fit: fill;
+}
+
+.maintile {
+    max-width: 300px;
+}
+
+/* media query för att stylea till kolumn när man t.ex kollar på mobilen. även lagt till så att margin-left och border-left försvinner vid 700px */
+
+@media (max-width: 768px) {
+    .e-flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100% flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .footerbottom {
+        margin-left: 0;
+        border-left: none;
+    }
+}
 }
 
 .footerhover:hover {
