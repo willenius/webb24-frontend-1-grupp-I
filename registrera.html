@@ -8,37 +8,53 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InstaCheese</title>
+  <title>Registrera</title>
 </head>
 
 <body>
-  <div class="h-container">
+  <div class="p-container">
     <header>
       <nav class="navbar">
-        <h1>Insta<span>Cheese<i class='bx bxs-cheese'></i></span></h1>
+        <h1>InstaCheese</h1>
         <ul>
           <li class="nav-spacer"><a class="nav-hover" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
           </li>
-          <li><a class="nav-hover" href="explore.html"><i class="fa-solid fa-magnifying-glass"></i> Explore</a></li>
+          <li><a class="nav-hover" href="explore.html"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+          </li>
           <li><a class="nav-hover" href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
         </ul>
       </nav>
     </header>
-    <main class="h-main">
-      <h2 class="h-logo"><i class='bx bxs-cheese'></i></h2>
-      <div class="h-parent">
-        <div class="div1"> <img class="h-jorden" src="./img/jorden.webp" alt="A picture of earth"> </div>
-        <div class="div2"> <img class="h-bil" src="./img/bil.webp" alt="A picture of the BMW M3 car"> </div>
-        <div class="div3"> <img class="h-arena" src="./img/arena.jpg"
-            alt="A picture of the Santiago Bernabeu, (Real Madrids football arena)"> </div>
-        <div class="div4"> <img class="h-stockholmpic" src="./img/stockholm.webp"
-            alt="A panoramic picture of Stockholm City"></div>
-      </div>
+
+    <main class="p-main">
+      <form class="p-login">
+        <h1 class="p-h1">Skapa ett konto</h1>
+        <div class="p-input-box">
+          <i class='bx bxs-user-badge'></i>
+          <input type="name" id="name" name="name" placeholder="Användarnamn" required>
+        </div>
+        <div class="p-input-box">
+          <i class='bx bxs-user'></i>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="p-input-box">
+          <i class='bx bxs-lock-alt'></i>
+          <input type="password" id="password" name="password" placeholder="Lösenord" required>
+        </div>
+        <div class="r-input-box-2">
+          <input type="password" id="password" name="password" placeholder="Bekräfta Lösenord" required>
+        </div>
+        <div class="p-submit">
+          <input type="submit" id="submit" name="submit" value="Skapa konto">
+        </div>
+        <p class="p-reg">Redan skapat konto?<a class="p-registrera" href="profile.html">Logga in</a></p>
+
+      </form>
     </main>
   </div>
   <footer>
@@ -56,7 +72,7 @@
             </a>
           </li>
           <li>
-            <a class="footerhover" href="profile.html">
+            <a class="footerhover" href="explore.html">
               <i class="fa-solid fa-user"></i>
             </a>
           </li>
